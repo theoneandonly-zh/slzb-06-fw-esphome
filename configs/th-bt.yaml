@@ -69,7 +69,9 @@ ethernet:
   type: LAN8720
   mdc_pin: GPIO23
   mdio_pin: GPIO18
-  clk_mode: GPIO0_IN
+  clk:
+    pin: GPIO0
+    mode: CLK_EXT_IN
   phy_addr: 1
   power_pin: GPIO16
 
@@ -272,7 +274,7 @@ script:
       - switch.turn_on: zRST_gpio
       - delay: 1s
       - switch.turn_off: zRST_gpio
-      - logger.log: "Wait 1 seconds for Radio chip to be ready"
+#      - logger.log: "Wait 1 seconds for Radio chip to be ready"
       - delay: 1s
       - switch.turn_off: zBSL
-      - logger.log: "Update Radio chip now!"
+#      - logger.log: "Update Radio chip now!"
