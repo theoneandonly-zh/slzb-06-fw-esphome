@@ -59,7 +59,7 @@ external_components:
   - source: github://tube0013/esphome-stream-server-v2
 
 dashboard_import:
-  package_import_url: github://smlight-dev/slzb-06-fw-esphome/configs/zb-bt.yaml
+  package_import_url: github://github.com/theoneandonly-zh/slzb-06-fw-esphome/blob/main/configs/zb-bt.yaml
 
 
 # 4. COMMUNICATION SETTINGS
